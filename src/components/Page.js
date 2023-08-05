@@ -38,7 +38,7 @@ function Page() {
                         })
                             .map((val) => {
                                 return (
-                                    <div className='innerbox col-lg-6 col-sm-12 col-md-6 col-xl-4  p-5'>
+                                    <div className='innerbox  p-5'>
                                         <img onClick={handleClick} src={val['image-url']} alt='img' />
                                         <p className='contentdetails'>{val.description}</p>
                                         <p className='price'>Price ${val.price}</p>

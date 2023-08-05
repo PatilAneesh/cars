@@ -3,3 +3,7 @@
     font-family: monospace;
     color: #fff;
 }
+.login-btn{
+    text-align: end;
+    margin-right: 40px;
+}
