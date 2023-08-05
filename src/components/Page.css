@@ -1,0 +1,13 @@
+.mainpage{
+    color: #fff;
+    margin: auto;
+    width: 70%;
+}
+.search{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.search input{
+    background-color: #000;
+    color: #fff;
+}
