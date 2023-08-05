@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './Login.css';
+import './Signup.css';
 
-function Login() {
+function Signup() {
     const [username,setUsername]=useState('')
     const [email,setEmail]=useState('')
     const [phone,setPhone]=useState('')
@@ -34,16 +34,16 @@ function Login() {
         .catch(er => console.log('ERR', er))
     }
     return (
-        <div className='form'>
+        <div className='formbox'>
             <form onSubmit={handleSubmit} className='form-width'>
                 <input type='text' name='username' required value={data.username}  onChange={handleChange}/>username <br/>
                 <input type='email' name='email' required value={data.email} onChange={handleChange}/>Email <br/>
                 <input type='text' name='phone' required value={data.phone} onChange={handleChange}/>phone<br/>
                 <input type='password' name='password' required value={data.password} onChange={handleChange}/>password<br/>
-                <button type="submit" className="btn btn-primary w-100">login</button>
+                <button type="submit" className="btn btn-primary w-100">Signup</button>
             </form>
         </div>
     )
 }
 
-export default Login
+export default Signup

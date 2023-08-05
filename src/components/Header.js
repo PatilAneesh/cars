@@ -9,9 +9,9 @@ function Header() {
     <div className='header'>
       <h1>Cars showroom</h1>
     </div>
-    <div className='login-btn'>
-    <Link to="/login">
-    <button type="button" class="btn btn-dark">Login</button>
+    <div className='Signup-btn'>
+    <Link to="/Signup">
+    <button type="button" class="btn btn-dark">Signup</button>
      </Link>
      <Link to="/cars">
     <button type="button" class="btn btn-dark">Cars</button>
