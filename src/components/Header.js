@@ -13,6 +13,9 @@ function Header() {
     <Link to="/login">
     <button type="button" class="btn btn-dark">Login</button>
      </Link>
+     <Link to="/cars">
+    <button type="button" class="btn btn-dark">Cars</button>
+     </Link>
     </div>
         </>
   )

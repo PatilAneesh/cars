@@ -16,11 +16,11 @@ function App() {
    </div> */}
     <BrowserRouter>
     <Header/>
-    <Page/>
-    <Footer/>
     <Routes>
+    <Route path="/cars" element={<Page/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
     </Routes>
+    <Footer/>
   </BrowserRouter>
   </>
   );
