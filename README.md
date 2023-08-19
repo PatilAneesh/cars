@@ -1,7 +1,7 @@
 # to start the project
 ### first go to backend
 cd back-end
-#### nodemon index.js
+#### npm run server
 
 ### then frontend
 cd cars
