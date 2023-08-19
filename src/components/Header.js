@@ -11,10 +11,13 @@ function Header() {
     </div>
     <div className='Signup-btn'>
     <Link to="/Signup">
-    <button type="button" class="btn btn-dark">Signup</button>
+    <button type="button" className="btn btn-dark">Signup</button>
      </Link>
      <Link to="/cars">
-    <button type="button" class="btn btn-dark">Cars</button>
+    <button type="button" className="btn btn-dark">Cars</button>
+     </Link>
+     <Link to="/Login">
+     <button type='button' className='btn btn-primary'>Login</button>
      </Link>
     </div>
         </>

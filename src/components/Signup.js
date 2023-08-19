@@ -2,10 +2,6 @@ import React, { useState } from 'react'
 import './Signup.css';
 
 function Signup() {
-    const [username,setUsername]=useState('')
-    const [email,setEmail]=useState('')
-    const [phone,setPhone]=useState('')
-    const [password,setPassword]=useState('')
     const[data,setData] = useState({
         username:'',
         email:'',
@@ -19,7 +15,6 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Login successful!");
         console.log("username:", data);
         fetch('http://localhost:4040/SignUpData', {
             method:'POST',
