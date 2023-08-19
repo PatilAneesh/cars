@@ -31,11 +31,11 @@ function Signup() {
     return (
         <div className='formbox'>
             <form onSubmit={handleSubmit} className='form-width'>
-                <input type='text' name='username' required value={data.username}  onChange={handleChange}/>username <br/>
-                <input type='email' name='email' required value={data.email} onChange={handleChange}/>Email <br/>
-                <input type='text' name='phone' required value={data.phone} onChange={handleChange}/>phone<br/>
-                <input type='password' name='password' required value={data.password} onChange={handleChange}/>password<br/>
-                <button type="submit" className="btn btn-primary w-100">Signup</button>
+            <span className='input-color'>username</span> <input type='text' name='username' required value={data.username}  onChange={handleChange}/><br/>
+            <span className='input-color'>Email</span><input type='email' name='email' required value={data.email} onChange={handleChange}/> <br/>
+            <span className='input-color'>phone</span> <input type='text' name='phone' required value={data.phone} onChange={handleChange}/><br/>
+            <span className='input-color'>password</span><input type='password' name='password' required value={data.password} onChange={handleChange}/><br/>
+             <button type="submit" className="btn btn-primary w-100">Signup</button>
             </form>
         </div>
     )
