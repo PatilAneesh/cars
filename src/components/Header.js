@@ -7,7 +7,7 @@ function Header() {
   return (
   <>
     <div className='header'>
-      <h1>Cars showroom</h1>
+      <h1>SuperCars showroom</h1>
     </div>
     <div className='Signup-btn'>
     <Link to="/Signup">
