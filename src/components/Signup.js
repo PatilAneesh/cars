@@ -8,6 +8,7 @@ function Signup() {
         phone:'',
         password:''
     })
+    const [ResponseData,setResponseData]=useState({})
     const handleChange =(e)=> {
         const {name, value} = e.target
         setData({...data, [name]: value})
@@ -24,8 +25,11 @@ function Signup() {
                 // 'Content-Type': 'application/x-www-form-urlencoded',
               },
         })
-        .then(res => res.json())
-        .then(dt => console.log('DATA FROM API', dt))
+        .then(res => res.json()) 
+        .then((dt) => {
+            console.log('DATA FROM API', dt);
+            setResponseData(dt); // Store the response data in state
+          })
         .catch(er => console.log('ERR', er))
     }
     return (
@@ -37,7 +41,22 @@ function Signup() {
             <span className='input-color'>password</span><input type='password' name='password' required value={data.password} onChange={handleChange}/><br/>
              <button type="submit" className="btn btn-primary w-100">Signup</button>
             </form>
+            {ResponseData && (
+                <>
+               <div className="response-data">
+          <h2>Response from Server</h2>
+          <ul>
+            {Object.entries(ResponseData).map(([key, value]) => (
+              <li key={key}>
+                <strong>{key}:</strong> {value}
+              </li>
+            ))}
+          </ul>
         </div>
+                </>
+            )}
+        </div>
+       
     )
 }
 
