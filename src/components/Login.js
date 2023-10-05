@@ -22,7 +22,7 @@ function Login() {
             // })
             .then(dt => {
                 console.log('LOGIN DATA FROM API', dt);
-                // Assuming your API returns a successful message message
+                // Assuming your API returns a successful  message message
                 if (dt?.message === 'Login successful') {
                     console.log('LOGIN ', dt);
                     setIsLoggedIn(true); // Set login status to true
@@ -35,13 +35,16 @@ function Login() {
     }
 
     return (
+        <>
+        <h1 className='header'>Login</h1>
         <div className='login'>
             {isLoggedIn ? (<Page />) : (<form onSubmit={handleSubmit} className='form-width'>
                 <input  type='text' name='username' value={formData.username} onChange={handleChange} /> <span className='input-color'>username</span> 
                 <input  type='password' name='password' value={formData.password} onChange={handleChange} /> <span className='input-color'>password</span> 
-                <button type='submit' className="btn btn-success">Login</button>
+                <button data-testid="btn" type='submit' className="btn btn-success">Login</button>
             </form>)}
         </div>
+        </>
     )
 }
 
