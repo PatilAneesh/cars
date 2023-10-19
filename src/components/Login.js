@@ -39,8 +39,8 @@ function Login() {
         <h1 className='header'>Login</h1>
         <div className='login'>
             {isLoggedIn ? (<Page />) : (<form onSubmit={handleSubmit} className='form-width'>
-                <input  type='text' name='username' value={formData.username} onChange={handleChange} /> <span className='input-color'>username</span> 
-                <input  type='password' name='password' value={formData.password} onChange={handleChange} /> <span className='input-color'>password</span> 
+                <input  type='text' placeholder='username' name='username' value={formData.username} onChange={handleChange} /> <span className='input-color'>username</span> 
+                <input  type='password' placeholder='password' name='password' value={formData.password} onChange={handleChange} /> <span className='input-color'>password</span> 
                 <button data-testid="btn" type='submit' className="btn btn-success">Login</button>
             </form>)}
         </div>
